@@ -30,7 +30,6 @@
     "@vue/cli-plugin-vuex": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "@vue/compiler-sfc": "^3.0.0",
-    "@vue/eslint-config-prettier": "^6.0.0",
     "autoprefixer": "^9",
     "babel-eslint": "^10.1.0",
     "babel-plugin-component": "^1.1.1",

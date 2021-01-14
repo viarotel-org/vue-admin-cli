@@ -1,5 +1,5 @@
 module.exports = {
-  title: "vue-apicloud-single-cli",
+  title: "vue-admin-cli",
   logo: () => require("@/assets/images/logo.png"),
   isSidebarLogo: true,
 };
