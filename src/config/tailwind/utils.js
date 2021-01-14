@@ -19,7 +19,7 @@ const baseConfig = {
       safelist: [/^el-/],
       blocklist: [],
       keyframes: true,
-      fontFace: true,
+      fontFace: false,
     },
   },
   theme: {
