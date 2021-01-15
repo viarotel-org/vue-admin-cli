@@ -21,6 +21,7 @@ app.use(request);
 //使用svg icon
 import icons from "./icons";
 app.use(icons);
+//引入element-ui
 import elementUi from "./plugins/element-ui";
 app.use(elementUi);
 //全局挂载的方法对象

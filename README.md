@@ -22,14 +22,14 @@
   <p align="center">
     基于vue3.x的中后台管理系统(elementPlus+tailwindcss)
     <br />
-    <a href="https://github.com/Viarotel/vue-admin-cli"><strong>探索本项目的文档 »</strong></a>
+    <a href="https://github.com/Viarotel/vue-admin-cli" target="_self"><strong>探索本项目的文档 »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/Viarotel/vue-admin-cli">查看Demo</a>
+    <a href="https://vue-admin-cli.vercel.app/" target="_blank">查看Demo</a>
     ·
-    <a href="https://github.com/Viarotel/vue-admin-cli/issues">报告Bug</a>
+    <a href="https://github.com/Viarotel/vue-admin-cli/issues" target="_blank">报告Bug</a>
     ·
-    <a href="https://github.com/Viarotel/vue-admin-cli/issues">提出新特性</a>
+    <a href="https://github.com/Viarotel/vue-admin-cli/issues" target="_blank">提出新特性</a>
   </p>
 
 
