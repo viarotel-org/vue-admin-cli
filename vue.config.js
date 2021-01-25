@@ -125,14 +125,17 @@ module.exports = {
     },
   },
 
-  // css: {
-  //   loaderOptions: {
-  //     sass: {
-  //       prependData: `@import "~@/assets/css/vuetify-custom.scss"`,
-  //     },
-  //     scss: {
-  //       prependData: `@import "~@/assets/css/vuetify-custom.scss";`,
-  //     },
-  //   },
-  // },
+  css: {
+    loaderOptions: {
+      // sass: {
+      //   prependData: `@import "~@/assets/css/vuetify-custom.scss"`,
+      // },
+      scss: {
+        // prependData: `@import "~@/assets/css/vuetify-custom.scss";`,
+        prependData: Object.keys(pageConfig.theme)
+          .map((key) => `${key}: ${pageConfig.theme[key]};`)
+          .join("\n"),
+      },
+    },
+  },
 };
