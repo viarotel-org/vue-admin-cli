@@ -88,7 +88,7 @@ export default {
       },
     };
   },
-  methods: {
+  methods: { 
     async submit() {
       try {
         const isValid = await this.$refs.formRefs.validate();
