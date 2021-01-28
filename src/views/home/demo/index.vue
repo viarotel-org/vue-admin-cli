@@ -1,17 +1,23 @@
 <template>
-  <div class="">
-    demo
-    <el-input v-model="vlaue"></el-input>
-    <el-button @click="$router.push({ name: 'test' })">test</el-button>
-  </div>
+  <el-card class="box-card">
+    <template #header>
+      <span>演示页面</span>
+    </template>
+    <div class="flex flex-col items-start">
+      <el-button
+        class=""
+        @click="$router.push({ name: 'test' })"
+      >
+        跳转test
+      </el-button>
+    </div>
+  </el-card>
 </template>
 
 <script>
 export default {
   data() {
-    return {
-      vlaue: "",
-    };
+    return {};
   },
   methods: {},
 };

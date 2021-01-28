@@ -1,9 +1,17 @@
 <template>
-  <div class="">
-    test
-    <el-input v-model="vlaue"></el-input>
-    <el-button @click="$router.push({ name: 'demo' })">demo</el-button>
-  </div>
+  <el-card class="box-card">
+    <template #header>
+      <span>测试页面</span>
+    </template>
+    <div class="flex flex-col items-start">
+      <el-button
+        class=""
+        @click="$router.push({ name: 'demo' })"
+      >
+        跳转demo
+      </el-button>
+    </div>
+  </el-card>
 </template>
 
 <script>
