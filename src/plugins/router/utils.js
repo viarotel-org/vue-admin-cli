@@ -7,7 +7,7 @@ import dictConfig from "@/config/dict";
  * @param {object}  banList 黑名单
  * @param {object}  mixins 路由混入列表
  */
-export function createAsyncRouterList({ banList = {}, mixins = {} } = {}) {
+export function getAsyncRouterList({ banList = {}, mixins = {} } = {}) {
   // eslint-disable-next-line no-useless-escape
   const getFileName = (path) => path.replace(/(.*\/)*([^\/]+).*/gi, "$2");
   const arrayToTreeObject = (arr) =>

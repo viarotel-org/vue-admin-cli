@@ -1,11 +1,11 @@
-import { createRouter, createAsyncRouterList } from "@/plugins/router";
+import { createRouter, getAsyncRouterList } from "@/plugins/router";
 import store from "@/store";
 import NProgress from "nprogress"; // progress bar
 import "nprogress/nprogress.css"; // progress bar style
 import { toast } from "@/plugins/modal";
 
 //自动生成并配置路由表
-const dynamicRouterArr = createAsyncRouterList({
+const dynamicRouterArr = getAsyncRouterList({
   banList: {
     // account: true,
   },
