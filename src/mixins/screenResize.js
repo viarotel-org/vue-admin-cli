@@ -1,4 +1,4 @@
-const { body } = document;
+import { windowSize } from "./windowSize";
 
 const screens = {
   sm: 640,
@@ -8,43 +8,36 @@ const screens = {
   "2xl": 1536,
 };
 
+const breakpoint = Object.keys(screens).reduce((obj, key) => {
+  obj[key] = false;
+  return obj;
+}, {});
+
 export const screenResize = {
+  mixins: [windowSize],
   data() {
     return {
-      _screen: Object.keys(screens).reduce((obj, key) => {
-        obj[key] = false;
-        return obj;
-      }, {}),
+      _breakpoint: { ...breakpoint },
     };
   },
   computed: {
     $_screen() {
-      return this._screen;
+      return this._breakpoint;
     },
   },
   beforeMount() {
-    window.addEventListener("resize", this.$_resizeHandler);
-  },
-  beforeUnmount() {
-    window.removeEventListener("resize", this.$_resizeHandler);
-  },
-  mounted() {
-    this.$_resizeHandler();
+    this.$watch("$windowWidth", this.$_resizeHandler, { immediate: true });
   },
   methods: {
     // use $_ for mixins properties
     // https://vuejs.org/v2/style-guide/index.html#Private-property-names-essential
-    $_resizeHandler() {
-      if (!document.hidden) {
-        const screen = this._screen;
-        const { width } = body.getBoundingClientRect();
-        for (const key in screen) {
-          if (Object.hasOwnProperty.call(screen, key)) {
-            screen[key] = width >= screens[key];
-          }
+    $_resizeHandler(width) {
+      console.log("width", width);
+      const _breakpoint = this._breakpoint;
+      for (const key in _breakpoint) {
+        if (Object.hasOwnProperty.call(_breakpoint, key)) {
+          _breakpoint[key] = width >= screens[key];
         }
-        // console.log("getBoundingClientRect.width", width);
-        // console.log("$_screen", screen);
       }
     },
   },

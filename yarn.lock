@@ -8845,6 +8845,11 @@ vm-browserify@^1.0.1:
   resolved "https://registry.npm.taobao.org/vm-browserify/download/vm-browserify-1.1.2.tgz#78641c488b8e6ca91a75f511e7a3b32a86e5dda0"
   integrity sha1-eGQcSIuObKkadfUR56OzKobl3aA=
 
+vue-demi@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.npm.taobao.org/vue-demi/download/vue-demi-0.6.0.tgz#e314282f704cb449119b9fd002cbbc0e39f591fe"
+  integrity sha1-4xQoL3BMtEkRm5/QAsu8Djn1kf4=
+
 vue-eslint-parser@^7.3.0:
   version "7.3.0"
   resolved "https://registry.npm.taobao.org/vue-eslint-parser/download/vue-eslint-parser-7.3.0.tgz?cache=0&sync_timestamp=1608031000826&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fvue-eslint-parser%2Fdownload%2Fvue-eslint-parser-7.3.0.tgz#894085839d99d81296fa081d19643733f23d7559"
@@ -8899,6 +8904,14 @@ vue-template-es2015-compiler@^1.9.0:
   version "1.9.1"
   resolved "https://registry.npm.taobao.org/vue-template-es2015-compiler/download/vue-template-es2015-compiler-1.9.1.tgz#1ee3bc9a16ecbf5118be334bb15f9c46f82f5825"
   integrity sha1-HuO8mhbsv1EYvjNLsV+cRvgvWCU=
+
+vue-window-size@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.npm.taobao.org/vue-window-size/download/vue-window-size-1.0.3.tgz#e21b6c39ac05dade5bd6df27e89e7bcb65aa316f"
+  integrity sha1-4htsOawF2t5b1t8n6J57y2WqMW8=
+  dependencies:
+    vue-demi "^0.6.0"
+    window-resize-subject "^1.4.4"
 
 vue@^3.0.0:
   version "3.0.5"
@@ -9107,6 +9120,11 @@ which@^2.0.1:
   integrity sha1-fGqN0KY2oDJ+ELWckobu6T8/UbE=
   dependencies:
     isexe "^2.0.0"
+
+window-resize-subject@^1.4.4:
+  version "1.4.4"
+  resolved "https://registry.npm.taobao.org/window-resize-subject/download/window-resize-subject-1.4.4.tgz#aac718af40e51bfe2bf9673225226688e350426a"
+  integrity sha1-qscYr0DlG/4r+WcyJSJmiONQQmo=
 
 word-wrap@~1.2.3:
   version "1.2.3"
