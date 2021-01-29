@@ -1,2 +1,2 @@
+export { default as windowSize } from "./windowSize";
 export { default as screenResize } from "./screenResize";
-export { default as windowSize } from "./screenResize";
