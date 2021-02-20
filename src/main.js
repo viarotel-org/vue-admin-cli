@@ -8,8 +8,7 @@ import "./styles/css/index.css";
 
 const app = createApp(App);
 //挂载全局指令
-import { onReverse, clampAuto } from "./directive/index";
-app.use(onReverse);
+import { clampAuto } from "./directive/index";
 app.use(clampAuto);
 //全局混入
 // import { screenResize } from "./mixins";
