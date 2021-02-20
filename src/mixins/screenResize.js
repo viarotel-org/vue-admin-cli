@@ -32,7 +32,7 @@ export const screenResize = {
     // use $_ for mixins properties
     // https://vuejs.org/v2/style-guide/index.html#Private-property-names-essential
     $_resizeHandler(width) {
-      console.log("width", width);
+      // console.log("width", width);
       const _breakpoint = this._breakpoint;
       for (const key in _breakpoint) {
         if (Object.hasOwnProperty.call(_breakpoint, key)) {
